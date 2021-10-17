@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Push to master
         run: |
-          git rebase master
+          git rebase origin/master
           git push origin master
