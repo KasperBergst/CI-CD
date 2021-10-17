@@ -6,6 +6,8 @@ on:
       
 jobs:
   push-to-master:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Push to master
         run: |
