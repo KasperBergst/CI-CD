@@ -5,9 +5,7 @@ on:
       - test
       
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  push-to-master:
     steps:
       - name: Push to master
         run: |

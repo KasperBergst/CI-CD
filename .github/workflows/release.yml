@@ -5,10 +5,11 @@ on:
       - release
       
 jobs:
-  build:
+  release-to-heroku:
     runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Push to release
-#         run: |
+    steps:
+      - name: Push to release
+        run: |
+          echo "releasing..."
 
