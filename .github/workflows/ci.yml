@@ -1,0 +1,14 @@
+Name: Integrate with master
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  steps:
+    - name: merge with master
+      run: |
+        git checkout test
+        git rebase origin/master
+        git push origin master
