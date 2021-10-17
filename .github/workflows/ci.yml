@@ -2,13 +2,15 @@ name: Integrate with master
 on:
   push:
     branches:
-      - test
+      - "feature_**"
       
 jobs:
   push-to-master:
     steps:
       - name: Push to master
         run: |
-          git checkout test
-          git rebase master
-          git push origin master
+          echo ${GITHUB_REF#refs/heads/}
+
+# git checkout ${GITHUB_REF#refs/heads/}
+# git rebase master
+# git push origin master
