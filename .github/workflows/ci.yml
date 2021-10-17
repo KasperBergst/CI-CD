@@ -10,5 +10,5 @@ jobs:
       - name: Push to master
         run: |
           git checkout test
-          git rebase origin/master
+          git rebase master
           git push origin master
